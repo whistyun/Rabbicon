@@ -13,11 +13,12 @@ python testrun.py
 ```
 
 現状、4つのURLを用意してます。
+
 |URL|説明|
-|----------|----------|
+|--------------------|----------|
 | http://localhost:5000/      | (ログイン不要)稼働確認用ページ |
 | http://localhost:5000/login | ログイン用ページ |
-| http://localhost:5000/index | (ログイン要)ログイン後のページ。ログインしていない状態で、アクセスした場合はloginに遷移させられる。 |
+| http://localhost:5000/index | (ログイン要)ログイン後のページ。<br>未ログインで、アクセスした場合はloginに遷移。 |
 | http://localhost:5000/login | ログアウト用ページ |
 
 なお、ユーザー/パスワード は伝統ある root/password です。
