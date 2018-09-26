@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN' 'http://www.w3.org/TR/html4/loose.dtd'>
+<html lang="ja">
+
+<head>
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+
+    <title>ログイン</title>
+    <link  rel="stylesheet" href="{{ url_for('static', filename = 'main.css') }}">
+</head>
+
+<body onload="scrollsave.init()">
+    <script type="text/javascript"></script>
+    <noscript><strong>Javascriptを有効にしてください</strong></noscript>
+
+{% if message %}
+    <div class="message {{ status }}">
+        {{ message }}
+    </div>
+{% endif %}
+
+    <div class="loginform">
+        <form action="/login" method="post">
+            <label for="userid">ユーザID</label>
+            <input name="userid" type="text">
+            <label for="userid">パスワード</label>
+            <input name="passwd" type="password">
+    
+            <input type="submit" value="ログイン">
+        </form>        
+    </div>
+</body>
+
+</html>

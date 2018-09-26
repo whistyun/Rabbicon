@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN' 'http://www.w3.org/TR/html4/loose.dtd'>
+<html lang="ja">
+
+<head>
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+
+    <title>{{ title }}</title>
+    <script type = "text/javascript" src = "{{ url_for('static', filename = 'scrollsave.js') }}"></script>
+    <link   rel="stylesheet"         href="{{ url_for('static', filename = 'main.css') }}">
+</head>
+
+<body onload="scrollsave.init()">
+    <script type="text/javascript"></script>
+    <noscript><strong>Javascriptを有効にしてください</strong></noscript>
+
+    <div class="linkDiv">
+        <ul>
+            <li><a href="{{ prev }}">Prev</a></li>
+            <li><a href="{{ top  }}">Up</a></li>
+            <li><a href="{{ next }}">Next</a></li>
+        </ul>
+    </div>
+
+    <div class="imageDiv">
+        <ul class="imageList">
+{% for idx, imagePath in enumerate(imagePaths) %}
+            <li><img id="img{{idx}}" src="{{imagePath}}}"></li>
+{% endfor %}
+        </ul>
+    </div>
+
+    <div class="linkDiv">
+        <ul>
+            <li><a href="{{ prev }}">Prev</a></li>
+            <li><a href="{{ top  }}">Up</a></li>
+            <li><a href="{{ next }}">Next</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

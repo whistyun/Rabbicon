@@ -1,0 +1,80 @@
+body{
+	background-color:#AAA;
+}
+.imageDiv, .menuDiv, .linkDiv{
+	width:100%;
+	margin:10px 0;
+}
+ul{
+	width:96%;
+	margin:0 auto;
+	border:0;
+	padding:0;
+	text-align:center;
+}
+
+.imageDiv li{
+	width:100%;
+	margin:2% 0;
+	padding:0;
+	list-style-type:none;
+}
+.imageDiv img{
+	width:97%;
+	margin:0 auto;
+	padding:0;
+	border-right:3pt solid;
+	border-bottom:3pt solid;
+}
+
+.menuList > li{
+	display:inline-block;
+	width:23%;
+	margin: 3px .5%;
+	border:0;
+	padding:0;
+	vertical-align:top;
+	list-style-type:none;
+}
+.menuItem > a{
+	display:block;
+	text-align:center;
+	border-left: solid 2px white;
+	border-top: solid 2px white;
+	border-right: solid 2px black;
+	border-bottom: solid 2px black;
+	padding:4%;
+	background-color:#DDD; 
+}
+.menuItem img{
+	width:100%;
+}
+
+.linkDiv li{
+	display:inline-block;
+	width:28%;
+	margin:0 2%;
+	list-style-type:none;
+}
+.linkDiv li a{
+	width:100%;
+	display:inline-block;
+	text-align:center;
+	border-left: solid 2px white;
+	border-top: solid 2px white;
+	border-right: solid 2px black;
+	border-bottom: solid 2px black;
+	background-color:#DDD; 
+}
+
+noscript{
+	display:block;
+	width:100%;
+}
+noscript strong{
+	display:block;
+	text-align:center;
+	padding:10px;
+	background-color:yellow;
+	color:red;
+}
